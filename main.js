@@ -10,9 +10,14 @@ const teclas = [
     '0','.','%','+'
 ];
 
-teclas.forEach((element)=>{
-    element= document.createElement('button');
-    teclado.appendChild(element);
+teclas.forEach((item)=>{
+    
+    let tecla = document.createElement('button');
+    teclado.appendChild(tecla);
+    tecla.textContent = item;
+    tecla.value = item;
+    tecla.classList.add('tecla');
+    
 })
     
 
